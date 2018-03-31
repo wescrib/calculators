@@ -1,5 +1,3 @@
-package binaryCalc;
-
 import java.util.Scanner;
 
 public class hexToBi {
