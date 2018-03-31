@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class biCalc {
@@ -14,20 +15,27 @@ public class biCalc {
 		
 
         Scanner keyboard = new Scanner(System.in);
+		try{
+			System.out.println("Enter a number: ");
+			int num = keyboard.nextInt();
 
-        System.out.println("Enter a number: ");
-        int num = keyboard.nextInt();
-        
-        if(num == 00000) {
-        	return num;
-        }
+			
+			if(num == 0) {
+				keyboard.close();
+				return num;
+			}
+			
+			Maths calculateToBinary = new Maths();
+			calculateToBinary.getBinary(num);
+			return fun();
 
-        Maths calculateToBinary = new Maths();
-        
-		calculateToBinary.getBinary(num);
-		
-		
-		return fun();
+		}catch(InputMismatchException e){
+			// System.out.println(e.fillInStackTrace());
+			System.out.println("INVALID INPUT. EXITING...");
+			return 0;
+		}finally{
+			keyboard.close();
+		}
 	}
 	
 

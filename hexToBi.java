@@ -17,16 +17,16 @@ public class hexToBi {
 	        System.out.println("Enter a number: ");
 	        String input  = keyboard.nextLine();
 	        
-	        if(input == "00000") {
+	        if(input.equals("00000")) {
+				keyboard.close();
 	        	return input;
 	        }
 
 	        Maths calculateToBinary = new Maths();
 	        
 			calculateToBinary.getHexToBinary(input);
-			
-			
-			return "hello world";
+
+			return hexaD();
 	}
 
 }
