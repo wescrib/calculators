@@ -97,4 +97,19 @@ public class Maths {
 		return answer;
 		
 	}
+
+	public long getFibIndex(long num){
+		long x=0, y=1, z;
+		if(num ==0){
+			return num;
+		}
+		for(int i=2; i<= (int)num; i++){
+			z = x + y;
+			x = y;
+			y = z;
+		}
+		System.out.println(y);
+		return y;
+
+	}
 }
