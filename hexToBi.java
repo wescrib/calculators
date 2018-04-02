@@ -17,14 +17,14 @@ public class hexToBi {
 	        System.out.println("Enter a number: ");
 	        String input  = keyboard.nextLine();
 	        
-	        if(input.equals("00000")) {
+	        if(input.equals("0")) {
 				keyboard.close();
 	        	return input;
 	        }
 
-	        Maths calculateToBinary = new Maths();
+	        // Maths calculateToBinary = new Maths();
 	        
-			calculateToBinary.getHexToBinary(input);
+			Maths.getHexToBinary(input);
 
 			return hexaD();
 	}

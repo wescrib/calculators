@@ -18,14 +18,15 @@ public class FibDigits{
                 System.out.println("Thanks, bye!");
                 return num;
             }
-            Maths fibCalc = new Maths();
-            fibCalc.getFibIndex(num);
+            // Maths fibCalc = new Maths();
+            Maths.getFibIndex(num);
             return fibIndex();
         }catch(InputMismatchException e){
             keyboard.close();
             System.out.println("INVALID INPUT. KEYBOARD CLOSED. EXITING...");
             return -1;
+        }finally{
+            keyboard.close();
         }
-        
     }
 }

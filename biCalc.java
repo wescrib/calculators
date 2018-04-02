@@ -25,8 +25,8 @@ public class biCalc {
 				return num;
 			}
 			
-			Maths calculateToBinary = new Maths();
-			calculateToBinary.getBinary(num);
+			// Maths calculateToBinary = new Maths();
+			Maths.getBinary(num);
 			return fun();
 
 		}catch(InputMismatchException e){

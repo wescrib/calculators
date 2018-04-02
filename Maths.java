@@ -3,9 +3,9 @@ import java.util.Arrays;
 public class Maths {
 
 	//1s and 0s will be stored in this area, up to 100 places
-	int bi[] = new int[100];
+	static int bi[] = new int[100];
 
-	public String getBinary(int num) {
+	public static String getBinary(int num) {
 		String answer ="";
 		int i = 0;
 		
@@ -34,7 +34,7 @@ public class Maths {
 	*
 	*
 	*/
-	public String getHexToBinary(String input) {
+	public static String getHexToBinary(String input) {
 		
 		String num="";
 		String answer="";
@@ -98,7 +98,7 @@ public class Maths {
 		
 	}
 
-	public long getFibIndex(long num){
+	public static long getFibIndex(long num){
 		long x=0, y=1, z;
 		if(num ==0){
 			return num;
